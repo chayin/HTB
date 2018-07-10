@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>HeTaiBei</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+</head>
+<body >
+	<div class="header hide">
+		<div class="navmenu">
+			<i id="room_menuBtn"></i>
+			<i id="add_deviceBtn"></i>
+			<h2 id="room_name"> </h2>
+			<span id="room_id" style="display: none"></span>
+		</div>
+	</div>
+	<div id="device_add_page" class="device_add hide">
+		<!-- <p id="add_device">添加设备</p> -->
+		<i id="close" class="icon_close"></i>
+		<p class="no_device">当前没有任何可添加设备</p>
+		<!-- <li>lamp1</li> -->
+	</div>
+
+	<div id="mask" class="mask show"></div>
+	<div id="room_page" class="room_page hide">
+		<div class="login_box">
+			<div id="login" class="login_img">
+				<img src="./icons/icon_chatHead.png" style="padding: -1px 3px 0 3px; ">
+			</div>
+			<p id="user_name">Chayin</p>
+		</div>
+		<div id="room_box" class="room_box">
+			<!-- <p>无房间</p> -->
+			<ul>
+				<li class="room" style="display: block;">
+					<i id="room" class="icon_room show"></i>
+					<i class="icon_room_del hide"></i>
+					<input id="20180226181230" class="room_name" type="text" name="" value="主卧" readonly="readonly">
+				</li>
+				<li id="room_add" class="room_set" style="display: none;">
+					<i class="icon_room_add"></i>
+					<p id="add">添加房间</p>
+				</li>
+				<li id="room_set" class="room_set">
+					<i class="icon_set"></i>
+					<p>房间管理</p>
+				</li>
+				<li id="room_wifi" class="room_wifi">
+					<i class="icon_wifi"></i>
+					<p>wifi设置</p>
+				</li>
+			</ul>
+
+			<div id="room_wifi_set" class="room_wifi_set hide">
+				<input type="text" name="" placeholder="wifi账号">
+				<input type="text" name="" placeholder="wifi密码">
+				<button id="again">重输</button>
+				<button id="comfir">确认</button>
+	        </div>
+		</div>
+	</div>
+	<img id="authorize" src="icons/icon_author.png" style="width: 326px; height: 297px; position: absolute; z-index: 2;">
+	<div class="body hide">
+		<!-- <div class="search_box">
+			<i class="search_icon"></i>
+			<input class="search" type="text" name="">
+		</div> -->
+		<div class="device_box">
+			<p class="no_device">还没有设备，去添加设备吧</p>
+			<!-- <input id="write_device_status" type="text" name="">
+			<button id="submit">提交</button> -->
+			<ul id="device_box" >
+				<!-- 添加错误预警 -->
+				<!-- 添加设备 -->
+			</ul>
+		</div>
+	</div>
+	
+	<div class="footer"></div>
+	
+
+	<!-- <div class="orientLayer">
+		<p>为了更好的体验，请使用竖屏浏览</p>
+	</div>
+
+	<div class="no_device">
+		<h3>无法连接设备</h3>
+		<p>请检查门磁感应器是否有点以及网络是否正常</p>
+	</div> -->
+
+    <script type="text/javascript" src="./js/zepto.js"></script>
+    <script type="text/javascript" src="js/process-bar.js"></script>
+    <script type="text/javascript" src="js/lamp.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
