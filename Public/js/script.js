@@ -4,7 +4,7 @@
     
 
 
-    var socket = io.connect();
+    // var socket = io.connect();
     var room_page = $("#room_page");
     var mask = $("#mask");
     var currentRoom = $("#room");
